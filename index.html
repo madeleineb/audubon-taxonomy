@@ -27,6 +27,11 @@ form {
   background-repeat: no-repeat;
   background-position: center;
   display: block;
+  border-radius: 25px;
+}
+
+form {
+  display: none;
 }
 
 </style>
@@ -39,7 +44,8 @@ form {
 <script src="http://colorbrewer2.org/export/colorbrewer.js"></script>
 <script src="js/lightbox-plus-jquery.min.js" ></script>
 <script>
-
+//set transparency on the lines, choose colors that are in the prints/ink-like
+//set background for whole page to parchment color
 var margin = {top: 40, right: 10, bottom: 10, left: 10},
     width = 1080 - margin.left - margin.right,
     height = 1080 - margin.top - margin.bottom;
@@ -99,7 +105,7 @@ function position() {
 
 function backgroundimage(uuid) {
   //returns a string which will be the path to the image
-  return "url(birds/"+uuid+".jpg)" ;
+  return "url(birds_tn/"+uuid+"_tn.jpg)" ;
 } 
 
 </script>
